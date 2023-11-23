@@ -23,4 +23,32 @@ This series of blueprint work will run throughout the project, from building sce
 
 ## Brief Overview of Project Blueprints:
 
-My project aims to create an immersive first-person narrative game with a walking exploration mechanism using Unreal Engine 5, and this is entirely based on blueprints. Blueprints, as the visual scripting system in Unreal Engine, will be the main tool for building game interactions. Below, I will detail various interaction blueprints I have created and explain their roles in the project.
+### Door Interaction Blueprint:
+
+1. **Rotating Door Orientation Check:**
+   - Use a trigger to detect if the player is near the door.
+   - Use blueprints to determine the player's orientation and identify the door's direction.
+   - If the orientation meets the requirements, allow the player to interact.
+
+2. **Authenticity Check for the Key:**
+   - Set up a trigger or interaction point to allow players to pick up the key.
+   - Use blueprints to verify if the picked-up key is genuine.
+   - If it is genuine, allow the door to open.
+
+3. **Locked State Check for Door Opening:**
+   - Establish a state variable in the blueprint to indicate whether the door is in a locked state.
+   - When the player interacts, check the door's locked state.
+   - If the door is locked, maintain its current state and do not perform the opening operation.
+
+4. **Door Sound Response:**
+   - Add audio components in the blueprint.
+   - Trigger corresponding sound effects when the door is opened or closed.
+   - Consider using audio triggers to play sounds when specific events occur.
+
+5. **Modeling Details:**
+   - Use 3D modeling tools to divide the door into two parts, rotating only the central portion.
+   - Ensure the door's collision volume matches the trigger for correct interaction events.
+   - Avoid unnecessary complexity and keep the model clear and simple.
+
+<img width="1149" alt="fecd67e8c60017086b915e535c75156" src="https://github.com/maanqii/MscAdvancedProject/assets/119876408/6c75f4dc-9ba2-4ddb-89d8-7204c5249631">
+<img width="1151" alt="61b0cb3b8a9c72a33b1fddbed87c909" src="https://github.com/maanqii/MscAdvancedProject/assets/119876408/1f2c7877-3ca4-4695-9861-c5dd2bbd18fe">
